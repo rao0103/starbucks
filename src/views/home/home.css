@@ -267,6 +267,7 @@ body {
   align-items: center;
   position: fixed;
   bottom: 0;
+  z-index: 10;
 }
 .footers div {
   width: 18vw;
