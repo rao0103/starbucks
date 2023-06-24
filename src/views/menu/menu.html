@@ -2,13 +2,126 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
 </head>
 
 <body>
-  <h1>MENU</h1>
+    <!-- 头部 -->
+    <header>
+        <div class="left">
+            <a href="" class="logo">
+                <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/logo.svg" alt="星巴克">
+            </a>
+            <div class="primary">
+                <ul>
+
+                    <li class="stores">
+                        <a id="stores-primary" href="/stores/">
+                            门店
+                        </a>
+                    </li>
+
+                    <li class="account">
+                        <a id="account-primary" href="/account/"><span data-reactroot="" class="">我的帐户</span></a>
+                    </li>
+
+                    <li class="menu">
+                        <a id="menu-primary" href="/menu/" class="active">
+                            菜单
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <a class="icon trigger" rel="nav-overlay" id="nav-menu">
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hamburger.svg">
+            <!-- <span>更多</span> -->
+        </a>
+    </header>
+    <!-- 头部导航 -->
+    <nav class="container middle secondary">
+        <div class="menu">菜单</div>
+        <div class="wrap">
+            <ul>
+                <li><a href="#" class="active">全部</a></li>
+                <li><a href="#">饮料</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">咖啡产品</a></li>
+                <li><a href="#">商品</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- 内容 -->
+    <section class="content">
+        <!-- 广告 -->
+        <div class="tag_ad">广告</div>
+        <div class="wrapper fluid margin page-menu-list"></div>
+        <!-- 搜索菜单 -->
+        <div class="frap">
+            <button id="featured-campaign-search" class="button primary trigger" rel="menu-search-overlay">搜索菜单</button>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <div class="primary-mobile">
+        <ul class="flex justify-around logging-in-element">
+            <li class="home" id="home-mobile">
+                <a href="/">
+                    <span class="icons">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home.svg">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg"
+                            class="active">
+                    </span>
+                    <div id="home-mobile">主页</div>
+                </a>
+            </li>
+            <li class="stores" id="stores-mobile">
+                <a href="/store/">
+                    <span class="icons">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores-active.svg"
+                            class="active">
+                    </span>
+                    <div id="stores-mobile">门店</div>
+                </a>
+            </li>
+            <li class="account" id="account-mobile">
+                <a href="/account/">
+                    <span class="icons">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account-active.svg"
+                            class="active">
+                    </span>
+                    <div id="account-mobile"><span data-reactroot="" class="">我的帐户</span></div>
+                </a>
+            </li>
+            <li class="menu" id="menu-mobile">
+                <a href="/menu/" class="active">
+                    <span class="icons">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu-active.svg"
+                            class="active">
+                    </span>
+                    <div id="menu-mobile">菜单</div>
+                </a>
+            </li>
+            <li class="more" id="more-mobile">
+                <a class="icon trigger" rel="nav-overlay">
+                    <span class="icons">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg">
+                        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more-active.svg"
+                            class="active">
+                    </span>
+                    <div>更多</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="./menu.js"></script> -->
 </body>
 
 </html>

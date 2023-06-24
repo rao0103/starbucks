@@ -36,6 +36,11 @@ module.exports = {
         test: /\.(woff | eot | ttf | otf | svg)$/,
         type: 'asset/resource',
       },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+        type: 'javascript/auto',
+      },
     ],
   },
   mode: process.env.NODE_ENV,
@@ -43,6 +48,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+    extensions: ['.js', '.json'],
   },
   externals: {
     jquery: 'jQuery',
