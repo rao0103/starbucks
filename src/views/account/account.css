@@ -404,9 +404,9 @@ footer ul {
     margin: 0;
     width: 100%;
     backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translateZ(0);
-    -webkit-justify-content: space-around;
+    perspective: 1000;
+    transform: translateZ(0);
+    justify-content: space-around;
 }
 
 footer {
