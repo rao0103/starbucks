@@ -1,14 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>门店</title>
+  <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+  <link rel="stylesheet" href="./store.css" />
+  <script src="//cache.amap.com/lbs/static/es5.min.js"></script>
+  <script
+    src="//webapi.amap.com/maps?v=2.0&key=4fe3179a75f6b1f131bb406adb418f6a&&plugin=AMap.Scale,AMap.HawkEye,AMap.ToolBar,AMap.ControlBar"></script>
 </head>
 
 <body>
-  <h1>Store</h1>
+  <!-- 头部 -->
+  <header>
+    <div class="left">
+      <a href="" class="logo">
+        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/logo.svg" alt="星巴克" />
+      </a>
+      <div class="primary">
+        <ul>
+          <li class="stores">
+            <a id="stores-primary" href="stores.html"> 门店 </a>
+          </li>
+
+          <li class="account">
+            <a id="account-primary" href="account.html"><span data-reactroot="" class="">我的帐户</span></a>
+          </li>
+
+          <li class="menu">
+            <a id="menu-primary" href="menu.html" class="active"> 菜单 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a class="icon trigger" rel="nav-overlay" id="nav-menu">
+      <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hamburger.svg" />
+      <!-- <span>更多</span> -->
+    </a>
+  </header>
+  <div class="navbar">
+    <div class="search">
+      <button>
+        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-locator-green.svg" alt="">
+        北京 东城
+        <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-locator-arrow.svg" alt="">
+      </button>
+      <div class="seekdiv">
+        <input type="text" placeholder="输入地址查找门店" class="seek">
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-search.svg" alt="">
+      </div>
+
+    </div>
+    <a href="" class="filters">
+      <span>筛选</span>
+    </a>
+  </div>
+  <div id="container"></div>
+  <div class="store">
+    <ul>
+      <li class="item">
+        北京东方广场三店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市
+          北京市东城区东长安街1号北京东方广场东方新天地商场平台层P-W1(08-10)号店铺
+        </p>
+        <p>817 m</p>
+        <div class="num">
+          <span>1</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京东方广场西区店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市
+          北京市东城区东长安街1号东方广场东方新天地商场地下一层
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>2</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京新世界女子百货店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市 北京市东城区东打磨厂7号崇文门新世界女子百货1层
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>3</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京王府井第二咖啡店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市 北京东城区王府井大街269号院1号楼B1层-132c号商铺
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>4</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京前门大街店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>北京市 北京市北京市 北京市崇文区前门大街1-1号</p>
+        <p>825 m</p>
+        <div class="num">
+          <span>5</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京市北京坊店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市 北京市西城区煤市街廊房头条13号院3号楼1F/2F/3F层
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>6</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京王府井店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市 北京市东城区王府井大街253号王府井百货大楼首层
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>7</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京新东安
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市
+          北京市东城区王府井大街138号新东安广场地下一层B111-B112号店铺
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>8</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京大栅栏店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>北京市 北京市北京市 北京市西城区大栅栏街道弓字胡同10号</p>
+        <p>825 m</p>
+        <div class="num">
+          <span>9</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+      <li class="item">
+        北京市民生金融中心店
+        <img class="delivery" src="https://www.starbucks.com.cn/assets/icons/delivery.png" alt="" />
+        <img class="mop" src="https://www.starbucks.com.cn/assets/icons/icon-mop.svg" alt="" />
+        <img src="https://www.starbucks.com.cn/assets/icons/icon-info-green.svg" alt="" class="right" />
+        <p>
+          北京市 北京市北京市 北京市东城区建国门内大街28号民生金融中心C座1层
+        </p>
+        <p>825 m</p>
+        <div class="num">
+          <span>10</span>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-pin-solid-grey.svg" alt="" />
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <ul class="flex justify-around logging-in-element">
+      <li class="home" id="home-mobile">
+          <a href="home.html">
+              <span class="icons">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home.svg">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg"
+                      class="active">
+              </span>
+              <div id="home-mobile">主页</div>
+          </a>
+      </li>
+      <li class="stores" id="stores-mobile">
+          <a href="store.html"  class="active">
+              <span class="icons">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg"class="active">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores-active.svg"
+                      >
+              </span>
+              <div id="stores-mobile">门店</div>
+          </a>
+      </li>
+      <li class="account" id="account-mobile">
+          <a href="account.html">
+              <span class="icons">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account-active.svg"
+                      class="active">
+              </span>
+              <div id="account-mobile"><span data-reactroot="" class="">我的帐户</span></div>
+          </a>
+      </li>
+      <li class="menu" id="menu-mobile">
+          <a href="menu.html">
+              <span class="icons">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg" style="display: block;">
+              </span>
+              <div id="menu-mobile">菜单</div>
+          </a> 
+      </li>
+      <li class="more" id="more-mobile">
+          <a class="icon trigger" rel="nav-overlay" href="more.html">
+              <span class="icons">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg">
+                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more-active.svg"
+                      class="active">
+              </span>
+              <div>更多</div>
+          </a>
+      </li>
+  </ul>
+  </div>
+  <script src="./store.js"></script>
 </body>
 
 </html>
