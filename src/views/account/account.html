@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/png" href="https://www-static.chinacdn.starbucks.com.cn/prod/assets/favicons/favicon-16x16.png" sizes="16*16">
+  <title>星享俱乐部 | 星巴克</title>
 </head>
-
 <body>
-  <h1>Account</h1>
+    <!-- 顶部 -->
+    <main class="top">
+      <div class="topOne">
+        <span>登录或创建一个新帐户 🌟</span>
+      </div>
+      <nav>
+        <ul class="clearfix">
+          <li>
+            <a href="#" class="botline">登录</a>
+          </li>
+          <li>
+            <a href="#">注册</a>
+          </li>
+          <li>
+            <a href="#">关于星享俱乐部</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <!-- 主要内容 -->
+    <section>
+      <main class="main">
+        <form action="">
+          <div class="box">
+            <!-- 用户名 -->
+            <div class="name">
+              <input type="text" name="" id="" class="one">
+              <label class="up">用户名或者电子邮箱</label>
+            </div>
+            <!-- 密码 -->
+            <div class="pwd">
+              <input type="password" name="" id="" class="one">   
+              <label class="up">密码</label>         
+              <span class="eyes"></span>
+              <p>此栏不可为空</p>
+            </div>
+          </div>
+          <!-- 复选框 -->
+          <div class="next">
+            <p>
+              <input type="checkbox" name="" id="next" value="on">
+              <label for="next">
+                <span>下次自动登录</span>
+              </label>
+            </p>
+            <a href="#">忘记密码？</a>
+          </div>
+          <!-- 验证 -->
+          <div class="test">
+            <div class="container-fluid">
+              <div class="form-row">
+                  <div class="col-12">
+                      <div class="slidercaptcha card">
+                          <div class="card-header">
+                              <span>拖动下方滑块完成拼图</span>
+                              <div>
+                                <span>
+                                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVgSURBVHgBzVrZUdxMEG7EcjzuH8EvIvA6Ai8ZmAhgqziLByACRASGB4qzChwBZOAlgl1HYDmDfaIoTn/ferQlNSNpRpJd/qrG8s7ZPdPT1zAlDeDq6qr98PDweWpqqoPyP6o6KG1TEsRoi19fX7/jO8D3bmtrK5aamJKKINHPz887b29vXRapADAyxNjDOsx4M5AQjkV3JbvDtQBmrl9eXg58GfFi4OLiYr9pwjWCIIjW1tYOXPs7MXBychJOT0/f4Lg7eX3Q1seH8t0Hk8P5+flRr9cbsY2ndn9/H7ZarRBtvCefULoFS/KuLLqcRikDl5eXyzjaQ7Hv+ggLHYHYw4RYV3BT8Olix/fxDW1zo/Q2NjZui+YpZMCITJQz+QEmP5QGAGZW8hgpE6lcBvKIh6gczc3NRb47XgZzIhEIXtZtRUxYGTg7O/uMz42laa+pXc8D1qaS+KLrcQdXVldXv+r6dwxwJ8DxQLIyT1lfwqXqy1/A8fFxBxf+m4WGj/pit/RgEK8HCvT+4vb29lAcQa3z9PQU4vInWiv2YZ5rYSOXDC0J2tSE+H5M982cQI7cO4tNiZEbQXXe+hgrmzhhbo6PRDNgROdHujOt4/r6ek8cYI6dOxSWdKVPtIR5nU709PT0EP13UlWj2dnZhUSJBKmGSC/E3RIHkHkjs6FD9xCa7Nv5+XnHoa9Q48lvtZ2AjuNu8iNICLCor8j1qG33houC0GsUGqJYtbVRfyMOMDt9oNbbobiO/2/qumpcDLn/Kg6gERK187QVGP/f5uZmD2UJ/1+g7KqhIWR82WUNcwetpzBmgBypMZE4ApohQwTvDYje1f148ciY6rsijqDLotb9xG9gLGBHdb4TR1gcvKO8vtio65KxuaC/pcZ2KUY8ga5q6Hv65BnZL9IuljZnt5x3gZ5uuo5RYMAwMF0JBpx3n1CTFqpGc9ppePlTDEfV2h2cavBBVQ7EA1C1Pco2C92Nor5QtZn7gjHO1t3Q1ldVYQuThOkaMPRTPGDEbbesH3a/q608L7x4gIES6EuP/0BfKEx3mpmZiaUhkGjOT01lCfxjH2VBMMp7fHxMV7UD3akpPx86/gsNHMpVTtYi8g3gLbS9Z6BB5IoVjZqroSwDGchwlZjoPwGqaBOsR1IBNtp4B8jApAG6tS2e6s0FhvC+1ABjDFUV8wQyqow3W/4AmojmtMbE7zjAP1ptLso/CuaUVNX3QBsTbdiqwsdCuyJx4FJrDALo1tt0ZeIkSU34WGgX0A3R6ph2pEXdiuion240vnYkNeBqoT3QVb+HXGOclcBu3UF0Jh1MfBBJDSRvBphrVJYedIHJ3KUxdq/Hhsz42pmIx2QEKoHEw+QPaIXx8wZz/agjlraoL3FDxgxQjHTEA+xXXZQ7rxYMwdCKVICJ1zO7TycwcUMmroTtFLDovlQA7lOT1jwStfvpbMmEgZxT2K0iSkxgSXYzOLf3PYBy2dHZEpPYiidr6UEgmAGNjpG93QAePRgZM893MF/P0yTKdHDFbMlCusI5uQtiFl2zaXXBOAI03IhDcvedO80O6LinqpmIGtTRTK4wYmNLlPVsp5j7wIFdiCy6t/JrYhmM6uV67zZJJ3Qz9EgB8piQ36nCqKmghLuOE47EkmYpIp4ofeQzrzVXYs/hxChRlYdqh/dmyvwe5r0umsf5mdXIZZg7EbxP45IM+ScFTA6kn1kZKKGtQ5+LHm/R6z5f8DHXUiPPrIqRPJFqCmNb5BNyev+pQdFrYg1Ufm+u/MceqYdqeq4dqQAG+UxlViE8QWUG0kiYMXlWRnS0wmGqCx87SCAN4U9GgQykmshB/QKLND1fMNqj0gAAAABJRU5ErkJggg==" alt="">
+                                </span>
+                                <span>
+                                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPZSURBVHgB7VpLTuNAEC2b8NlNboDnBJgbJCdgOAFkAQixGDgB9gkIC4T4SIETTOYEhBOQOcF4buAVQojPvGfZGbv9iWMbE0vzpMam3e7Uq66u7q6yJhXh/PzcwKWjaZqJsop7E6XtF8JlwTPn7e3tF64jXMf7+/uOlIAmJTAYDNovLy/f39/fOyxSACSCd29A5r4ImUIEfG1buq5vyD8NlwbI3Ly+vtp5iFAGtpuJQKBxaOtQKhRcgQvF9Hd2duy0BldXV8eQQwMBKzeBs7Mzs9Vq/cCtkdYGpkBzuIcAY9r3ysqK2+v1aPse+cfHRwN9GL65rUHjnYyf5FzpqqNB4VFvodi5CVxeXtLOLUnWuoNn/eXl5dtA2LwIJj4IH0uyYthfb29vbxgWnve5CYRfUgVHsdD5rVQAkNnOIHKEZ1/CcgQE9KxO04SHxk+XlpbWqxKegDD0RF2UpD5PUpQoLUkBzSbhJRd1R/wx+QD49r6N0XD80ZiKxBGgbdKulWoXM7/7UcKHQdOAonp52sYI0FuA/Z1S7Ql/cHAwlpoAb7Wap12MAP28xCeSXafwGY4jhggBmo76IicsJmtfasIswhPqCFjK/w78uyU1YVbhiYkXovZh+1vKc2vWxako+PvcHuDWzvnKiH+0UAeW4rocmM5XmXNMTChJ+9IAeASwaPHwYYQfYKX9KQ2ARwB7cDNcyV1lXbZfFh4B/2AyAba5jdA+4RGAwJFtMvfy0hB4BGAyplLvSEMQeKHICJSNFNQJXRqO/wQ+GwGBiM/3D9uNQEDAUeoNaQg8AoxVRip13ZSGIFgHIgsXFrYNaQiClXgYruTCxrOxNAAeAX/hckL17efn521pACZuVA0oNcWMJgQQiI0c3BmAvbi4+CZzjgkB7v8Twnon8z4XpkUlDMyFXCG+z0KEACczo75Km8Pr6+stmVPEwus0GWj9QaKrMZNz3d3d3VoPOkyq+IvqKG2LH9vMcS4gPrMp0f1RG5P6zj/81wKOOuKjDyAwQPmN/VknqV3ibtSPg6qm5JGAZzqUDwZD+wg03CjVnaS2mRmahGBXgD7CLnbVkQvffAe4jblvmPB6kglPTTFlkHCkohRTjuznUVqAOVeSzzebk5THDopVJFGdQ/BIki8JudOsfvCXiQ8jtTNk3WG797gdLSwsuIuLi044zfr09MTkiclVHte1rOw++hqjr81pSpk5U59hUlWBhO28OYmynxpUucBxK3PKPdkszqHUxx6hRDXTUoXWCMZhcRkWSZQTpQiEEf7cBtc1FAP3RqiJC2EpIF3hH54Coe1hWVf8FxUNF4vY5AiIAAAAAElFTkSuQmCC" alt="">
+                                </span>
+                              </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="bg"></div>
+                            <div class="bgSmall"></div>
+                            <div id="captcha" class="captcha">
+                              <div class="long"></div>
+                              <div class="blue"></div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <!-- 登录 -->
+          <div class="login">
+            <button>登录</button>
+          </div>
+        </form>
+      </main>
+    </section>
+    <!-- 页脚 -->
+    <footer class="clearfix">
+      <ul class="clearfix">
+        <li>
+          <a href="home.html">
+            <span>
+              <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home.svg" alt="">
+            </span>
+            <p>主页</p>
+          </a>
+        </li>
+        <li>
+          <a href="store.html">
+            <span>
+              <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg" alt="">
+            </span>
+            <p>门店</p>
+          </a>
+        </li>
+        <li>
+          <a href="menu.html">
+            <span>
+              <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account-active.svg" alt="">
+            </span>
+            <p>我的账户</p>
+          </a>
+        </li>
+        <li>
+          <a href="account.html">
+            <span>
+              <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg" alt="">
+            </span>
+            <p>菜单</p>
+          </a>
+        </li>
+        <li>
+          <a href="more.html">
+            <span>
+              <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg" alt="">
+            </span>
+            <p>更多</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
 </body>
-
 </html>

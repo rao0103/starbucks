@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5% !important;
+    -webkit-tap-highlight-color: transparent; 
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    font-family: "Gotham", Helvetica, Arial, PingFangSC-Regular, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 160%;
+    background-color: #f7f7f7;;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+
+.botline {
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: 3px solid #00A862;
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+.top {
+    padding: 16px 16px 0 16px;;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.topOne {
+    margin-bottom: 20px;
+}
+
+.topOne>span {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+nav {
+    margin: -6px -16px 0;
+}
+
+nav ul {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: -12px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 0 12px 18px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.56);
+    margin-right: 18px;
+    display: inline-block;
+    padding: 6px 0;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    padding: 24px 0 24px 0;
+}
+
+.main {
+    overflow: hidden;
+    max-width: 480px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.main .name,
+.main .pwd {
+    display: block;
+    padding-top: 25px;
+    position: relative;
+}
+
+.name input,
+.pwd input {
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    -ms-border-bottom: 1px solid #edebe9;
+    border-radius: 0;
+    box-sizing: border-box;
+    display: block;
+    padding: 4px 0;
+    transition-property: border;
+    transition-duration: 0.2s;
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+    z-index: 500;
+}
+
+.name input:focus,
+.main input:focus {
+    border-color: #00A862;
+    outline: none;
+}
+
+.name label,
+.pwd label {
+    color: #c1bcbc;
+    vertical-align: top;
+    line-height: normal;
+    padding-top: 0;
+    position: absolute;
+    top: 38px;
+    transition-duration: 0.2s;
+}
+
+.pwd {
+    position: relative;
+}
+
+.pwd .eyes {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 8px;
+    top: 40px;
+    cursor: pointer;
+    background-image: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hide-password.svg
+    );
+    background-size: contain;
+    z-index: 999;
+}
+
+.pwd>p {
+    background: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-cross-red.svg
+    ) no-repeat left center;
+    padding-left: 27px;
+    color: rgba(0, 0, 0, 0.56);
+    margin-top: 4px;
+    display: none;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    position: relative;
+}
+
+.next input {
+    position: absolute;
+    opacity: 0;
+}
+
+.next label {
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.next label:before {
+    border: 1px solid #00A862;
+    border-radius: 8px;
+    content: '';
+    opacity: 1;
+    float: left;
+    height: 30px;
+    margin: -4px 8px 0 0;
+    width: 30px;
+}
+
+.next .green label:after {
+    opacity: 1;
+    transform: scale(1);
+    width: 32px;
+    height: 32px;
+    top: -4px;
+    left: 0;
+    border-radius: 7px;
+    background: #00A862 url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-checked.svg) no-repeat center center;
+    position: absolute;
+    clear: both;
+    content: "";
+    display: table;
+    transition: all 0.1s ease;
+}
+
+.next span {
+    display: block;
+    padding-left: 40px;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.next span::before {
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    background: #00A862;
+    height: 52.8px;
+    width: 52.8px;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    left: -10px;
+    top: -14px;
+    transition: all 0.1s ease;
+}
+
+.next a {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: #00A862;
+    display: inline-block;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.slidercaptcha {
+    margin: 0 auto;
+    width: 325px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    background-color: #fff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slidercaptcha .card-header div>span {
+    display: inline-block;
+    height: 16px;
+    width: 24px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin: 4px 0 4px 6px;
+    text-align: center;
+    line-height: 19px;
+}
+
+.card-header div>span img {
+    height: 11px;
+}
+
+.card-body {
+    width: 280px;
+    height: 200px;
+    position: relative;
+}
+
+.card-body .bg {
+    position: absolute;
+    background-position: 0px 0px;
+    background-size: 100%;
+    width: 280px;
+    height: 163px;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=1&image=0279050…&sess=s0AHe1v6_2soWDVrL_eM9x8Q7zOtwSU9bANlB9D3UMy9NclsVJhuS4tk1vw3sO1B_3bXQe9kX-jKUPPbvqvtGOt8ltIMoLAnrMdD2bHDO-FL3axP_4dPFPLjLYU8h4PX-Jl8wcuTiY6ST6fRuB6Jv3bJsf4aD9w2iNJdPMkzHiLGMm9DhYgBGyJyVe3Xs3K2roeSBth053zMpoI4jjSI7chZYGKxYByzpsyHeLkV2yqULn1KR7ALCyGiDxIzXAEXILzWVbhgySde9Z_Wz_GLSbWW_Ootzvn-GBWS8_tLMc8DuyfjD9UI7xQ5NvtX9vFX0KCSjweszhRWtKiI-aedeKmWC5vM7rKUG5_E1J7ria21LvE61Wn2C4Dg**);
+}
+
+.card-body .bgSmall {
+    position: absolute;
+    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=0&image=0279050…&sess=s0AHe1v6_2soWDVrL_eM9x8Q7zOtwSU9bANlB9D3UMy9NclsVJhuS4tk1vw3sO1B_3bXQe9kX-jKUPPbvqvtGOt8ltIMoLAnrMdD2bHDO-FL3axP_4dPFPLjLYU8h4PX-Jl8wcuTiY6ST6fRuB6Jv3bJsf4aD9w2iNJdPMkzHiLGMm9DhYgBGyJyVe3Xs3K2roeSBth053zMpoI4jjSI7chZYGKxYByzpsyHeLkV2yqULn1KR7ALCyGiDxIzXAEXILzWVbhgySde9Z_Wz_GLSbWW_Ootzvn-GBWS8_tLMc8DuyfjD9UI7xQ5NvtX9vFX0KCSjweszhRWtKiI-aedeKmWC5vM7rKUG5_E1J7ria21LvE61Wn2C4Dg**);
+    background-position: -58.3333px -204.167px;
+    background-size: 284.167px 258.333px;
+    width: 50px;
+    height: 50px;
+    left: 20.8333px;
+    top: 83.75px;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.captcha .long {
+    position: absolute;
+    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=0&image=0279050…&sess=s0AHe1v6_2soWDVrL_eM9x8Q7zOtwSU9bANlB9D3UMy9NclsVJhuS4tk1vw3sO1B_3bXQe9kX-jKUPPbvqvtGOt8ltIMoLAnrMdD2bHDO-FL3axP_4dPFPLjLYU8h4PX-Jl8wcuTiY6ST6fRuB6Jv3bJsf4aD9w2iNJdPMkzHiLGMm9DhYgBGyJyVe3Xs3K2roeSBth053zMpoI4jjSI7chZYGKxYByzpsyHeLkV2yqULn1KR7ALCyGiDxIzXAEXILzWVbhgySde9Z_Wz_GLSbWW_Ootzvn-GBWS8_tLMc8DuyfjD9UI7xQ5NvtX9vFX0KCSjweszhRWtKiI-aedeKmWC5vM7rKUG5_E1J7ria21LvE61Wn2C4Dg**);
+    background-position: 0px -175.833px;
+    background-size: 284.167px 258.333px;
+    width: 280px;
+    height: 13.3333px;
+    left: 0px;
+    top: 175.833px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.blue {
+    position: absolute;
+    text-align: center;
+    left: 18.75px;
+    top: 167.5px;
+    z-index: 2;
+    width: 54.1667px;
+    height: 29.1667px;
+    line-height: 29.1667px;
+    background-color: rgb(26, 121, 255);
+    box-shadow: rgba(26, 121, 255, 0.5) 0px 0px 4.16667px 0.416667px;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 999px;
+    font-size: 0;
+}
+
+.slidercaptcha canvas:first-child {
+    border-radius: 4px;
+    border: 1px solid #e6e8eb;
+}
+
+.slidercaptcha.card .card-header {
+    background-image: none;
+    font-size: 12px;
+}
+
+.refreshIcon {
+    top: -54px;
+}
+
+.login {
+    float: left;
+    width: 100%;
+    padding-top: 24px;
+    text-align: right;
+}
+
+.login button {
+    border: 1px solid #00A862;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+    margin-bottom: 4px;
+    font-weight: 700;
+    padding: 12px 24px;
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+    color: rgba(0, 0, 0, 0.38);
+    cursor: not-allowed;
+    border-radius: 48px;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.1s;
+    transition-property: background, border-color, color;
+}
+
+footer ul {
+    box-sizing: border-box;
+    padding: 0 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    margin: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translateZ(0);
+    -webkit-justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: all 0.1s linear;
+    z-index: 996;
+}
+
+footer ul li {
+    float: left;
+    width: 20%;
+}
+
+footer ul li a {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.56);
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 6px 4px;
+    transform: scale(1);
+    text-align: center;
+    transition-duration: 0.1s;  
+    user-select: none;
+}
+
+footer ul li span {
+    display: block;
+    height: 28px;
+    margin-bottom: 3px;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+}
+
+footer ul li img {
+    display: block;
+    height: 28px;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    max-width: 100%;
+}
