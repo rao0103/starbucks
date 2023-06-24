@@ -76,7 +76,7 @@ module.exports = {
   plugins: [
     new WebpackBar(),
     new MiniCssExtractPlugin({
-      filename: 'css/[main].[contenthash:8].css',
+      filename: 'css/[name].[contenthash:8].css',
     }),
     new HtmlWebpackPlugin({
       inject: 'body',
