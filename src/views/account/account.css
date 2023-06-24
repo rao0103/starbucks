@@ -308,18 +308,18 @@ section {
     overflow: hidden;
     z-index: 1;
     opacity: 1;
-    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=1&image=0279050…&sess=s0AHe1v6_2soWDVrL_eM9x8Q7zOtwSU9bANlB9D3UMy9NclsVJhuS4tk1vw3sO1B_3bXQe9kX-jKUPPbvqvtGOt8ltIMoLAnrMdD2bHDO-FL3axP_4dPFPLjLYU8h4PX-Jl8wcuTiY6ST6fRuB6Jv3bJsf4aD9w2iNJdPMkzHiLGMm9DhYgBGyJyVe3Xs3K2roeSBth053zMpoI4jjSI7chZYGKxYByzpsyHeLkV2yqULn1KR7ALCyGiDxIzXAEXILzWVbhgySde9Z_Wz_GLSbWW_Ootzvn-GBWS8_tLMc8DuyfjD9UI7xQ5NvtX9vFX0KCSjweszhRWtKiI-aedeKmWC5vM7rKUG5_E1J7ria21LvE61Wn2C4Dg**);
+    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=1&image=027905000000002e0000000bb958d0f03ba1&sess=s0DY8RcGtI9I-d594aoAcVDisebKSmCfAsNcJJ4q_tEqrQ7Z9mMbAtxlSDG8P8__Sk3Yz0WGNKrgRpjW-XMDBfxFzTbUINyVbb9riIgztPhHF-7gOtIs7f_Hq3zQVe6a7F8SZD4KHJ6pQc_FgpAHpVL5DON4CrBHv-uIGOoTcqbwObBy-m0-oDkR6XQ78kW-CtWwoIomlRNwPNdRRa06KUMC1DDogfoezMKSq1IP7rFFzo-psdQKp2tssuhpk81vUTqmi96CS_1wInrREAVoSfRoU-_CHA-xz7T7ycQFxwbNIl07RP-qUK0bPbTXq2SILzYnFc0Eqpkr2-ZL8HOt0nVG-0tVuPFYH2W3b-FZ89WDCKd_1RS1C3y45kyqia_RTkjfdwqTM4dSAzXtKUe56dddsq_ni4Qmyz-Ic_V6fgbG8*);
 }
 
 .card-body .bgSmall {
     position: absolute;
-    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=0&image=0279050…&sess=s0AHe1v6_2soWDVrL_eM9x8Q7zOtwSU9bANlB9D3UMy9NclsVJhuS4tk1vw3sO1B_3bXQe9kX-jKUPPbvqvtGOt8ltIMoLAnrMdD2bHDO-FL3axP_4dPFPLjLYU8h4PX-Jl8wcuTiY6ST6fRuB6Jv3bJsf4aD9w2iNJdPMkzHiLGMm9DhYgBGyJyVe3Xs3K2roeSBth053zMpoI4jjSI7chZYGKxYByzpsyHeLkV2yqULn1KR7ALCyGiDxIzXAEXILzWVbhgySde9Z_Wz_GLSbWW_Ootzvn-GBWS8_tLMc8DuyfjD9UI7xQ5NvtX9vFX0KCSjweszhRWtKiI-aedeKmWC5vM7rKUG5_E1J7ria21LvE61Wn2C4Dg**);
+    background-image: url(https://t.captcha.qq.com/cap_union_new_getcapbysig?img_index=0&image=027905000000002e0000000bb958d0f03ba1&sess=s0DY8RcGtI9I-d594aoAcVDisebKSmCfAsNcJJ4q_tEqrQ7Z9mMbAtxlSDG8P8__Sk3Yz0WGNKrgRpjW-XMDBfxFzTbUINyVbb9riIgztPhHF-7gOtIs7f_Hq3zQVe6a7F8SZD4KHJ6pQc_FgpAHpVL5DON4CrBHv-uIGOoTcqbwObBy-m0-oDkR6XQ78kW-CtWwoIomlRNwPNdRRa06KUMC1DDogfoezMKSq1IP7rFFzo-psdQKp2tssuhpk81vUTqmi96CS_1wInrREAVoSfRoU-_CHA-xz7T7ycQFxwbNIl07RP-qUK0bPbTXq2SILzYnFc0Eqpkr2-ZL8HOt0nVG-0tVuPFYH2W3b-FZ89WDCKd_1RS1C3y45kyqia_RTkjfdwqTM4dSAzXtKUe56dddsq_ni4Qmyz-Ic_V6fgbG8*);
     background-position: -58.3333px -204.167px;
     background-size: 284.167px 258.333px;
     width: 50px;
     height: 50px;
     left: 20.8333px;
-    top: 83.75px;
+    top: 54px;
     z-index: 1;
     cursor: pointer;
     opacity: 1;
