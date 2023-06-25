@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>门店</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>门店</title> 
+  <link rel="icon" type="image/png" href="https://www-static.chinacdn.starbucks.com.cn/prod/assets/favicons/favicon-16x16.png" sizes="16*16">
   <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
   <link rel="stylesheet" href="./store.css" />
   <script src="//cache.amap.com/lbs/static/es5.min.js"></script>
@@ -201,59 +202,50 @@
       </li>
     </ul>
   </div>
-  <div class="footer">
-    <ul class="flex justify-around logging-in-element">
-      <li class="home" id="home-mobile">
-          <a href="home.html">
-              <span class="icons">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home.svg">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg"
-                      class="active">
-              </span>
-              <div id="home-mobile">主页</div>
-          </a>
+  <footer class="clearfix">
+    <ul class="clearfix">
+      <li>
+        <a href="home.html">
+          <span>
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home.svg" alt="">
+          </span>
+          <p>主页</p>
+        </a>
       </li>
-      <li class="stores" id="stores-mobile">
-          <a href="store.html"  class="active">
-              <span class="icons">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg"class="active">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores-active.svg"
-                      >
-              </span>
-              <div id="stores-mobile">门店</div>
-          </a>
+      <li>
+        <a href="store.html">
+          <span>
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores-active.svg" alt="">
+          </span>
+          <p class="door">门店</p>
+        </a>
       </li>
-      <li class="account" id="account-mobile">
-          <a href="account.html">
-              <span class="icons">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account-active.svg"
-                      class="active">
-              </span>
-              <div id="account-mobile"><span data-reactroot="" class="">我的帐户</span></div>
-          </a>
+      <li>
+        <a href="account.html">
+          <span>
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg" alt="">
+          </span>
+          <p>我的账户</p>
+        </a>
       </li>
-      <li class="menu" id="menu-mobile">
-          <a href="menu.html">
-              <span class="icons">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg" style="display: block;">
-              </span>
-              <div id="menu-mobile">菜单</div>
-          </a> 
+      <li>
+        <a href="menu.html">
+          <span>
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg" alt="">
+          </span>
+          <p>菜单</p>
+        </a>
       </li>
-      <li class="more" id="more-mobile">
-          <a class="icon trigger" rel="nav-overlay" href="more.html">
-              <span class="icons">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg">
-                  <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more-active.svg"
-                      class="active">
-              </span>
-              <div>更多</div>
-          </a>
+      <li>
+        <a href="more.html">
+          <span>
+            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg" alt="">
+          </span>
+          <p>更多</p>
+        </a>
       </li>
-  </ul>
-  </div>
+    </ul>
+  </footer>
   <script src="./store.js"></script>
 </body>
-
 </html>

@@ -352,7 +352,7 @@ section {
     cursor: pointer;
     opacity: 1;
     border-radius: 999px;
-    font-size: 0;
+    color: #fff;
 }
 
 .slidercaptcha canvas:first-child {
@@ -396,6 +396,16 @@ section {
     transition-property: background, border-color, color;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: all 0.1s linear;
+    z-index: 996;
+}
+
 footer ul {
     box-sizing: border-box;
     padding: 0 6px;
@@ -407,16 +417,6 @@ footer ul {
     -webkit-perspective: 1000;
     -webkit-transform: translateZ(0);
     -webkit-justify-content: space-around;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    transition: all 0.1s linear;
-    z-index: 996;
 }
 
 footer ul li {
@@ -435,6 +435,10 @@ footer ul li a {
     text-align: center;
     transition-duration: 0.1s;  
     user-select: none;
+}
+
+footer .account {
+    color: #00A862;
 }
 
 footer ul li span {

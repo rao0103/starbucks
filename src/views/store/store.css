@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
 }
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -169,28 +169,53 @@ button>img {
 }
 
 
-.footer ul {
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: all 0.1s linear;
+    z-index: 996;
+    background-color: #fff;
+}
+
+footer ul {
     box-sizing: border-box;
     padding: 0 6px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
     background: #fff;
-    display: flex;
     margin: 0;
     width: 100%;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translateZ(0);
+    -webkit-justify-content: space-around;
 }
 
-.footer ul li {
-    list-style: none;
-    position: relative;
-    margin: 0px;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
+footer ul li {
+    float: left;
     width: 20%;
-    -ms-flex: 1;
-    flex: 1;
 }
 
-.footer ul li .icons {
+footer ul li a {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.56);
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 6px 4px;
+    transform: scale(1);
+    text-align: center;
+    transition-duration: 0.1s;  
+    user-select: none;
+}
+
+footer .door {
+    color: #00A862;
+}
+
+footer ul li span {
     display: block;
     height: 28px;
     margin-bottom: 3px;
@@ -199,45 +224,15 @@ button>img {
     width: 100%;
 }
 
-.footer ul li a {
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.56);
-    display: block;
-    font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 1;
-    padding: 6px 4px;
-    transform: scale(1);
-    text-align: center;
-}
-
-.footer ul li a img {
+footer ul li img {
     display: block;
     height: 28px;
     left: 50%;
     pointer-events: none;
     position: absolute;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 0;
-}
-
-.footer ul li a img.active {
-    display: none;
-}
-
-.footer ul li a.active {
-    color: #00A862;
-}
-
-.footer ul li a.active img.active {
-    display: block;
-}
-
-.footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .store {
